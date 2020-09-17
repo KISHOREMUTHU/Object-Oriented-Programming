@@ -10,23 +10,29 @@ class bin{
         int real,img;
         
         public:
-        
+   
+     //Parameterised Constructor
        bin(int r,int i){
            real=r;
            img=i;
               } 
-       
+      
+    //Binary operator overloading function ("+" sign)
+
         bin operator +(bin b){
            int creal,cimg;
            creal=real+b.real;
             cimg=img+b.img;
   cout<<"Real part: "<<creal<<endl<<"Imaginary part: "<<cimg<<endl<<endl;         
-            }
+             }
             
+     //Printing data
        void show (){
          cout<<"Real part: "<<real<<endl<<"Imaginary part: "<<img<<endl;
              }
         
+      //Binary operator overloading using friend function ("-" sign)
+
             friend void operator -(bin,bin);//friend function overloading           
              };
             
