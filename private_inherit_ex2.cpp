@@ -7,9 +7,10 @@
 using namespace std;
 
 class base{
-       public:
-
+       
         int a;
+   
+      public:
         
         //Getting data from user using constructor
       int get(){
