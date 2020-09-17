@@ -12,7 +12,7 @@ class base{
    
       public:
         
-        //Getting data from user using constructor
+        //Getting data from user
       int get(){
        
            a=10;
