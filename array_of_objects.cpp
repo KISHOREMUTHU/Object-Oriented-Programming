@@ -15,18 +15,21 @@ class data{
 
     };
 
+//Getting data from user
 void data::getdata(){
   cout<<"Enter data: ";
     cin>>a;  
     }
 
+//Printing data
 void data:: displaydata (){
       cout<<"Data is : "<<a<<endl;
         }
         
  int main (){
    int i;
-    class data d[5];
+    class data d[5];//array of objects
+
   for(i=0;i<5;i++){
          d[i].getdata();//getting data
            }
