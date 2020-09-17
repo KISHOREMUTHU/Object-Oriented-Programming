@@ -6,12 +6,15 @@
 #include<iostream>
 using namespace std;
 
-class sample;
+class sample; //friend class
 
 class example{
+
       int a;
     
      public:
+
+          //Getting user input
     
       void getdata ()
              {
@@ -19,13 +22,17 @@ class example{
               cin>>a;
              }
             
-      friend class sample;
+      friend class sample; //friend class declaration
     
     };
     
  class sample{
          
          public:
+
+      // Copying the value of a class in an object
+      //Printing data
+
         void printdata(example e)
             {
               e.getdata();
@@ -38,7 +45,7 @@ class example{
 
      class sample s1;
      class example e1;
-     s1.printdata(e1);
+     s1.printdata(e1); //friend class functions here
       return 0;
     
     }
