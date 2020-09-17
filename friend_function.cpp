@@ -8,27 +8,36 @@
 using namespace std;
     
 class box{
+
    private:
+
    double l,b;
+
 public:
-   friend double printarea(box bo);
-   double set_lb(double len ,double bre){
-   l=len;
-    b=bre;}
+
+   friend double printarea(box bo); //friend function declaration
+ 
+  double set_lb(double len ,double bre){
+           l=len;
+           b=bre;
+         }
+
   };
 
+//Friend function for printing area of Box
+
 double printarea (box bo){
-    
-  cout<<" Area of Box : "<<bo.l*bo.b;
-    }
+     cout<<" Area of Box : "<<bo.l*bo.b;
+                }
     
     int main(){
-      int x,y;
-     
-      class box bo;
+
+        int x,y;
+       class box bo;
     cout<<"Enter length and breadth: ";
     cin>>x>>y;
      bo.set_lb(x,y);
-     printarea ( bo );
+     printarea ( bo ); //friend function works here
      return 0;
+
     }
