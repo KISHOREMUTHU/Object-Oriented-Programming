@@ -14,13 +14,15 @@ class base{
       public:  
 
         //Getting data from user
-      int get(int temp){
-       
+      int get(int temp)
+           {
            a=temp;
           return a;
           }
         
-        void print(){
+       //Printing data 
+        void print()
+             {
            cout<<"Data in base class: "<<a<<endl;
               }
             
@@ -33,7 +35,8 @@ class derived : protected base{
           int b;
         
         //Function inside derived class 
-         void show (){
+         void show ()
+             {
             print();//This will print either garbage value or zero (compiler dependent)
             b=get(15)+10;//This line will derive the get() function from base class
             cout<<"Data in derived class: "<<b<<endl;
