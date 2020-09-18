@@ -11,20 +11,22 @@ class unary{
     
     public:
     
-     unary(){
+     unary()
+        {
     cout<<"Enter data: "; //getting data using constructor
      cin>>a;
          }
         
-     void operator -(){
+     void operator -()
+          {
         a=2*a; //overloading '-' operator for multiplying by 2
             }
             
-      void print(){
+      void print()
+        {
          cout<<"Data after overloading: "<<a<<endl; //printing data
         }
     
-
     };
     
  int main (){
