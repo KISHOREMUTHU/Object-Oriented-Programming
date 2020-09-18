@@ -19,6 +19,7 @@ class base{
           return a;
           }
         
+       //Printing data
         void print(){
            cout<<"Data in base class: "<<a<<endl;
               }
