@@ -10,16 +10,20 @@ using namespace std;
 class data{
    int a;
     public:
-    void getdata ();
-    void displaydata();
+    void getdata ();// Function defining
+    void displaydata();//Function defining
     };
  
-void data::getdata(){
+// Using scope resolution operator , a work is assigned to a function outside the class
+
+void data::getdata()
+     {
   cout<<"Enter data: ";
     cin>>a;
-    
-    }
-void data:: displaydata (){
+      }
+
+void data::displaydata()
+        {
       cout<<"Data is : "<<a<<endl;
         }
         
