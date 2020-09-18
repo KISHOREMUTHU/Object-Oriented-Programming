@@ -12,11 +12,15 @@ class base{
         int a;
         
         //Getting data from user
-        void getdata(){
+        void getdata()
+            {
          cout<<"Enter data: ";
-           cin>>a;}
+           cin>>a;
+            }
         
-        void print(){
+         //Printing data
+        void print()
+            {
            cout<<"Data in base class: "<<a<<endl;
               }
             
@@ -28,7 +32,8 @@ class derived : public base{
           int b;
         
         //Function inside derived class 
-         void show (){
+         void show ()
+           {
             print();
             b=a+10; //you can add any command on your own
             cout<<"Data in derived class: "<<b<<endl;
