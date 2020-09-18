@@ -14,38 +14,45 @@ class opera{
   opera(){
     a=10;
     b=20;
-    c=30;}
+    c=30;
+    }
 
    //Postfix function
-   opera operator ++(int var){
+   opera operator ++(int var)
+    {
      a=a+100;
       b=b+100;
       c=c+100;
      }
     
      //Prefix function
-    opera operator --(){
+    opera operator --()
+     {
        a=a-100;
        b=b-100;
        c=c-100;
-   }
+        }
     
-    void print(){
-     cout<<a<<b<<c;}
+    void print() 
+       {
+     cout<<a<<b<<c;
+       }
     
     };
 int main (){
+
     class opera o;
      o.print(); 
      cout<<endl;
 
-     
-     
-    
-     --o;
+     --o; //Prefix operator overloading
      o.print();
-     o++;
+
+     o++; //Postfix operator overloading
       o.print();
+
+      return 0;
+
      }
 
     
