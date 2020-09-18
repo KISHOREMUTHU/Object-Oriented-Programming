@@ -5,7 +5,11 @@
 
 #include<iostream>
 using namespace std;
-inline int m(int x,int y){
+
+//Inline function is declared with the word inline
+
+inline int m(int x,int y)
+     {
    return (x>y)?x:y;
      }
     
