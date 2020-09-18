@@ -12,11 +12,16 @@ class point{
    
      public:
      
-    void getdata (){
+   //Getting user input
+
+    void getdata ()
+       {
      cout<<"Enter data: ";
        cin>>a;
        }
     
+    //Printing data
+
     void printdata(){
         cout<<"Data is: "<<a<<endl;
            }
