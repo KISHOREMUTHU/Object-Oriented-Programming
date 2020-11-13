@@ -16,21 +16,31 @@ class point{
  
   
   void show(){
-       cout<<*c;}//Display dynamic constructor printing
-  point(){
+       cout<<*c;
+            }  //Display dynamic constructor printing
+
+ point(){
    a=100;
-   cout<<a;}//Default constructor
+   cout<<a;
+      }//Default constructor
+ 
   ~point(){
      cout<<"Freeing memory"<<endl;
      }//Destructor
+ 
   point(int x1){
       c=new int;
        x=x1;
-       *c=x1;}//Dynamic and Parameterized constructor initialisation
+       *c=x1;
+  }//Dynamic and Parameterized constructor initialisation
+ 
    point(point &p){
       x=p.x;}//Copy constructor
+ 
    int get(){
-    cout<<x;}
+    cout<<x;
+   }
+ 
     };
  
 int main(){
